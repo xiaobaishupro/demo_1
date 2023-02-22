@@ -19,6 +19,12 @@ import java.util.List;
 public class UserController {
     @Resource
     private UserService userService;
+
+    /**
+     * 得到列表
+     *
+     * @return {@link List}
+     */
     @GetMapping
     public List getList(){
         return userService.list();
